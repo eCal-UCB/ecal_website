@@ -1,0 +1,466 @@
+/*  ------------------------------------------------------------------------
+                                    Scott Moura
+    ------------------------------------------------------------------------  */
+
+body	{
+	  background: white;
+	  font-family: "open sans", "helvetica", "tahoma", "arial";
+	  font-size: 10pt;
+	  margin: 0px 10px 10px 10px;
+	  color:
+	}
+
+a:link{
+	color: #000099;
+	text-decoration: none;
+	}
+a:link:hover{
+	color: #FFD700;
+	text-decoration: none;
+	}
+a:visited{
+	color: #000099;
+	text-decoration: none;
+	}
+a:visited:hover{
+	color: #FFD700;
+	text-decoration: none;
+	}
+
+a img	{
+	border: 0px;
+	text-decoration: none;
+	}
+
+ol	{
+	line-height: 150%;
+	margin-left: -10px;
+	}
+
+ul	{
+	line-height: 150%;
+	}
+
+ul li{
+    margin-left: -15px;
+    margin-right: 10%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+h4  {
+    margin-bottom: -5px;
+    }
+
+table{
+    margin-left: 15px;
+    }
+
+th{
+    font-weight:bold;
+    border-bottom: 1px solid #ccc;
+    }
+
+th, td{
+    padding: 5px;
+    }
+
+/*  --------------------------|  GLOBAL ID'S  |--------------------------  */
+
+#content{
+	width: 1024px;
+	margin: 2px auto;
+	padding: 0px;
+	text-align:left;
+	background: white;
+	}
+
+#header{
+    background-image:url('img/banner-ecal.png');
+    height: 148px;
+	}
+
+#menurow{
+	height: 22px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+	}
+
+#menu a{
+    float:left;
+    text-align: center;
+	color: #000080;
+	display: block;
+	text-decoration:none;
+	padding: 5px;
+	margin: 0px 15px 0px 15px;
+	font-size: 11pt;
+	}
+
+#menu img{
+    height:28px;
+    float:left;
+    display: block;
+	margin: -5px 0px -5px 0px;
+}
+
+#menu a:hover{
+	background: #FFD700;
+	color: #000080;
+	}
+
+#main{
+    /*background: rgb(224,224,224);*/
+	width: 875px;
+	padding: 10px;
+	margin: 2px 0px 0px 0px;
+    float: left;
+	}
+
+#highlight-area{
+    text-align: left;
+    height: 350px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#highlight{
+    position: absolute;
+    bottom: 20px;
+    width: 250px;
+    opacity:0.8;
+    background-color: #D2E0DA;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size:12pt;
+    line-height:130%;
+}
+
+#highlight a{
+    color: #194c66
+    }
+
+#blueline{
+	border: 1px solid #000080;
+	clear: both;
+	}
+
+#maizeline{
+	border: 1px solid #FFD700;
+	clear: both;
+	}
+
+#title{
+	height: 20px;
+	float: left;
+	padding-right: 10px;
+    margin-bottom: 5px;
+	font-size: 13pt;
+    font-weight: bold;
+    background-color: white;
+	}
+
+#title-line{
+    height: 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+#section{
+	height: 20px;
+	float: left;
+	padding-right: 5px;
+    margin-bottom: 5px;
+	font-size: 11pt;
+    font-weight: bold;
+    background-color: white;
+	}
+
+#project{
+	background: rgb(241, 244, 246);
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	margin-bottom: 5px;
+	}
+
+#projtitle{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	clear: both;
+	}
+
+#projtitle img{
+	border: 1px solid #CCCCCC;
+	margin-left: 75px;
+	float: right;
+	padding: 3px;
+	}
+
+#newsitem{
+	background: rgb(241, 244, 246);
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	margin-bottom: 5px;
+	}
+
+#data{
+	border-collapse: collapse;
+	}
+
+#data th{
+	font-weight: bold;
+	color: rgb(241, 244, 246);
+	background: #000080;
+	border: 1px solid black;
+	padding: 3px;
+	text-align: center;
+	}
+
+#data td{
+	border: 1px solid black;
+	padding: 3px;
+	text-align: center;
+	}
+
+#data tr{
+	height: 50px;
+	}
+
+#data #green{
+	background: green;
+	color: white;
+	}
+
+#data #yellow{
+	background: yellow;
+	}
+
+#data #red{
+	background: red;
+	}
+
+#hr	{
+	border-top: 1px solid #000080;
+	margin: 10px 0px;
+	}
+
+#footer{
+	border-top: 2px solid black;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	clear: both;
+	}
+
+#footer a{
+	color: white;
+	}
+
+#footer a:hover{
+	color: #FFD700;
+	}
+
+/*  --------------------------|  GLOBAL CLASSES  |--------------------------  */
+.whitelink:link{
+	color: white;
+	text-decoration: none;
+	}
+.whitelink:link:hover{
+	color: #FFD700;
+	text-decoration: none;
+	border-bottom: 1px solid #FFD700;
+	}
+.whitelink:visited{
+	color: white;
+	text-decoration: none;
+	}
+.whitelink:visited:hover{
+	color: #FFD700;
+	text-decoration: none;
+	border-bottom: 1px solid #FFD700;
+	}
+
+.photo{
+    padding:2px;
+    border: 1px solid #ccc;
+}
+
+.justify-image{
+	text-align: justify;
+}
+.justify-image img{
+	display:inline-block;
+}
+.justify-image:after{
+	content:""; display: inline-block; width: 100%; height: 0;
+}
+
+/* Publications CSS Elements */
+.jPubs{
+    margin-left: -40px;
+    padding-right: 0px;
+    list-style-type: none;
+}
+.jPubs li {
+    counter-increment: step-counter;
+}
+.jPubs li::before {
+    content: "J" counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: rgb(200,200,200);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.cPubs{
+    margin-left: -40px;
+    padding-right: 0px;
+    list-style-type: none;
+}
+.cPubs li {
+    counter-increment: step-counter;
+}
+.cPubs li::before {
+    content: "C" counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: rgb(200,200,200);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.nPubs{
+    margin-left: -40px;
+    padding-right: 0px;
+    list-style-type: none;
+}
+.nPubs li {
+    counter-increment: step-counter;
+}
+.nPubs li::before {
+    content: "N" counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: rgb(200,200,200);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.dPubs{
+    margin-left: -40px;
+    padding-right: 0px;
+    list-style-type: none;
+}
+.dPubs li {
+    counter-increment: step-counter;
+}
+.dPubs li::before {
+    content: "D" counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: rgb(200,200,200);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.pubContainer{
+    margin-bottom: 5pt;
+    clear:both;
+    }
+.pubTitle{
+    font-weight: bold;
+    }
+.pubAuthors{
+    font-size: 8pt;
+    font-weight: bold;
+    color: #0000FF;
+    }
+.pubJournal{
+    font: Verdana;
+    font-style: italic;
+    }
+.pubInfo{
+    font-size: 8pt;
+    font-weight: bold;
+    }
+.pubAward{
+    font-size: 8pt;
+    font-weight: bold;
+    color: red;
+    }
+
+.newsContainer{
+    margin-top: 10px;
+    clear:both;
+    }
+.newsContainer:after{
+    content: '';
+    display: block;
+    clear: both;
+    }
+.newsDate{
+    float: left;
+    width: 105px;
+    font-size: 9pt;
+    font-weight: bold;
+    }
+.newsContent{
+    float: right;
+    width: 810px;
+    }
+
+
+.projectImg{
+    float:left;
+    width:225px;
+    padding-top:20px;
+    }
+.projectDescription{
+    padding-top:10px;
+    padding-bottom:20px;
+    margin-left:20px;
+    text-align:justify;
+    line-height:175%;
+    }
+.projectTable{
+    border-spacing: 5px;
+    }
+.projectTable td,th{
+    vertical-align:top;
+    }
+
+.facImg{
+    float:left;
+    width:225px;
+    padding-top:5px;
+    }
+
+.button {
+    margin: 5px;
+    font-size: 120%;
+    background-color: #D2E0DA;
+		border: 1px solid black;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/*  ------------------------------|  FORMS  |-------------------------------  */
+
+
+
+
+/*  FORM INPUTS  */

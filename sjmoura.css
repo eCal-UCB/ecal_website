@@ -1,0 +1,301 @@
+/*  ------------------------------------------------------------------------
+                                    Scott Moura
+    ------------------------------------------------------------------------  */
+
+body	{
+	  background: url(img/checker.png);
+	  font-family: tahoma, verdana, arial, sans-serif;
+	  font-size: 10pt;
+	  margin: 0px 10px 10px 10px;
+	  color:
+	}
+
+a:link{
+	color: #0000FF;
+	text-decoration: none;
+	}
+a:link:hover{
+	color: #FFD700;
+	text-decoration: none;
+	}
+a:visited{
+	color: #0000FF;
+	text-decoration: none;	
+	}
+a:visited:hover{
+	color: #FFD700;
+	text-decoration: none;	
+	}
+	
+a img	{
+	border: 0px;
+	text-decoration: none;
+	}
+
+ol	{
+	line-height: 150%;
+	margin-left: -10px;
+	}
+	
+/*  --------------------------|  GLOBAL ID'S  |--------------------------  */
+
+#content{
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+	text-align:left;
+	background: white;
+	border: 1px solid #000080;
+	}
+	
+#header{	
+	border-bottom: 2px solid #FFD700;
+	background-color: #000080;
+	color: white;
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 20pt;
+	padding: 5px;
+	}
+    
+#header a{
+	color: white;
+	}
+
+#header a:hover{
+	color: #FFD700;	
+	}
+
+#menucol{
+	float: left;
+	width: 130px;
+	margin: 10px 0px 10px 5px;
+	}
+
+#menu a{
+	width: 110px;
+	color: #000080;
+	display: block;
+	text-decoration:none;
+	padding: 5px;
+	margin: 0px;
+	text-align: left;
+	font-size: 8pt;
+	font-weight: bold;
+	border-bottom: 1px solid #000020;
+	}
+
+#menu a:hover{
+	background: #FFD700;
+	color: #000080;	
+	}
+
+#blueline{
+	border: 1px solid #000080;
+	clear: both;
+	}
+	
+#maizeline{
+	border: 1px solid #FFD700;
+	clear: both;
+	}	
+
+#title{
+	width: 813px;
+	float: left;
+	padding: 0px 2px 2px 10px;
+	margin-bottom: 5px;
+	background-image: url(img/title-back.png);
+	color: white;
+	font-family: tahoma, verdana, arial, sans-serif;
+	font-size: 12pt;	
+
+	}
+
+#main 	{
+	width: 800px;
+	padding: 10px;
+	margin: 2px 0px 10px 2px;
+	float: left;
+	}
+
+#contactinfo{
+	padding: 10px 10px 10px 20px;
+	float: left;
+	font-size: 10pt;
+	}
+	
+#section{
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 8pt;
+	padding: 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+	background: #536A98;
+	color: white;
+	border-top: solid 1px gold;
+	}
+
+#project{
+	background: white;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	margin-bottom: 5px;
+	}	
+
+#projtitle{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	clear: both;
+	}
+	
+#projtitle img{
+	border: 1px solid #CCCCCC;
+	margin-left: 75px;
+	float: right;
+	padding: 3px;
+	}
+	
+#newsitem{
+	background: white;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	margin-bottom: 5px;
+	}		
+	
+#data{
+	border-collapse: collapse;
+	}
+	
+#data th{
+	font-weight: bold;
+	color: white;
+	background: #000080;
+	border: 1px solid black;
+	padding: 3px;
+	text-align: center;
+	}
+	
+#data td{
+	border: 1px solid black;
+	padding: 3px;
+	text-align: center;
+	}
+	
+#data tr{
+	height: 50px;
+	}	
+	
+#data #green{
+	background: green;
+	color: white;
+	}
+	
+#data #yellow{
+	background: yellow;
+	}	
+
+#data #red{
+	background: red;
+	}
+	
+#hr	{
+	border-top: 1px solid #000080;
+	margin: 10px 0px;
+	}
+	
+#pic	{
+	border-left: 0.1em solid #CCCCCC;
+	border-top: 0.1em solid #CCCCCC;
+	border-bottom: 0.15em solid #333333;
+	border-right: 0.15em solid #333333;
+	padding: 3px;
+	margin: 5px;
+	}
+
+#footer{
+	border-top: 2px solid #FFD700;
+	background-color: #000080;
+	color: white;	
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	clear: both;
+	}
+	
+#footer a{
+	color: white;
+	}
+	
+#footer a:hover{
+	color: #FFD700;
+	}	
+
+/*  --------------------------|  GLOBAL CLASSES  |--------------------------  */
+.whitelink:link{
+	color: white;
+	text-decoration: none;
+	}
+.whitelink:link:hover{
+	color: #FFD700;
+	text-decoration: none;
+	border-bottom: 1px solid #FFD700;	
+	}
+.whitelink:visited{
+	color: white;
+	text-decoration: none;
+	}
+.whitelink:visited:hover{
+	color: #FFD700;
+	text-decoration: none;
+	border-bottom: 1px solid #FFD700;	
+	}
+    
+    
+.pubContainer{
+    margin-bottom: 5pt;
+    }
+.pubTitle{
+    font-weight: bold;
+    }
+.pubAuthors{
+    font-size: 8pt;
+    font-weight: bold;
+    color: #000080;
+    }
+.pubJournal{
+    font: Verdana;
+    font-style: italic;
+    }
+.pubInfo{
+    font-size: 8pt;
+    font-weight: bold;
+    }
+.pubAward{
+    font-size: 8pt;
+    font-weight: bold;
+    color: red;
+    }
+    
+.newsContainer{
+    margin-top: 8px;
+    }
+.newsContainer:after{
+    content: '';
+    display: block;
+    clear: both;
+    }
+.newsDate{
+    float: left; 
+    width: 100px;
+    font-weight: bold;
+    }
+.newsContent{
+    float: right;
+    width: 690px;
+    }
+/*  ------------------------------|  FORMS  |-------------------------------  */
+
+
+
+
+/*  FORM INPUTS  */
