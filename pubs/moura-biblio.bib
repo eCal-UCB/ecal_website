@@ -1,0 +1,269 @@
+@ARTICLE{Moura2010-Tradeoffs,
+  title     = "Tradeoffs between battery energy capacity and stochastic optimal
+               power management in plug-in hybrid electric vehicles",
+  author    = "Moura, Scott J and Callaway, Duncan S and Fathy, Hosam K and
+               Stein, Jeffrey L",
+  abstract  = "Recent results in plug-in hybrid electric vehicle (PHEV) power
+               management research suggest that battery energy capacity
+               requirements may be reduced through proper power management
+               algorithm design. Specifically, algorithms which blend fuel and
+               electricity during the charge depletion phase using smaller
+               batteries may perform equally to algorithms that apply
+               electric-only operation during charge depletion using larger
+               batteries. The implication of this result is that ``blended''
+               power management algorithms may reduce battery energy capacity
+               requirements, thereby lowering the acquisition costs of PHEVs.
+               This article seeks to quantify the tradeoffs between power
+               management algorithm design and battery energy capacity, in a
+               systematic and rigorous manner. Namely, we (1) construct dynamic
+               PHEV models with scalable battery energy capacities, (2)
+               optimize power management using stochastic control theory, and
+               (3) develop simulation methods to statistically quantify the
+               performance tradeoffs. The degree to which blending enables
+               smaller battery energy capacities is evaluated as a function of
+               both daily driving distance and energy (fuel and electricity)
+               pricing.",
+  journal   = "Journal of Power Sources",
+  publisher = "Elsevier BV",
+  volume    = "195",
+  number    = "9",
+  pages     = "2979--2988",
+  month     = "may",
+  year      = "2010",
+  doi       = "10.1016/j.jpowsour.2009.11.026"
+}
+
+@ARTICLE{Bashash2011-ChgPattern,
+  title     = "Plug-in hybrid electric vehicle charge pattern optimization for
+               energy cost and battery longevity",
+  author    = "Bashash, Saeid and Moura, Scott J and Forman, Joel C and Fathy,
+               Hosam K",
+  abstract  = "This paper examines the problem of optimizing the charge pattern
+               of a plug-in hybrid electric vehicle (PHEV), defined as the
+               timing and rate with which the PHEV obtains electricity from the
+               power grid. The optimization goal is to simultaneously minimize
+               (i) the total cost of fuel and electricity and (ii) the total
+               battery health degradation over a 24-h naturalistic drive cycle.
+               The first objective is calculated for a previously-developed
+               stochastic optimal PHEV power management strategy, whereas the
+               second objective is evaluated through an electrochemistry-based
+               model of anode-side resistive film formation in lithium-ion
+               batteries. The paper shows that these two objectives are
+               conflicting, and trades them off using a non-dominated sorting
+               genetic algorithm. As a result, a Pareto front of optimal charge
+               patterns is obtained. The effects of electricity price and trip
+               schedule on the optimal Pareto points and the PHEV charge
+               patterns are analyzed and discussed.",
+  journal   = "Journal of Power Sources",
+  publisher = "Elsevier BV",
+  volume    = "196",
+  number    = "1",
+  pages     = "541--549",
+  month     = "jan",
+  year      = "2011",
+  doi       = "10.1016/j.jpowsour.2010.07.001"
+}
+
+@ARTICLE{Moura2011-SDP,
+  title     = "A stochastic optimal control approach for power management in
+               plug-in hybrid electric vehicles",
+  author    = "Moura, Scott Jason and Fathy, Hosam K and Callaway, Duncan S and
+               Stein, Jeffrey L",
+  journal   = "IEEE Transactions on Control Systems Technology",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    = "19",
+  number    = "3",
+  pages     = "545--555",
+  month     = "may",
+  year      = "2011",
+  doi       = "10.1109/TCST.2010.2043736"
+}
+
+@ARTICLE{Moura2011-Film,
+  title     = "Optimal control of film growth in lithium-ion battery packs via
+               relay switches",
+  author    = "Moura, Scott J and Forman, Joel C and Bashash, Saeid and Stein,
+               Jeffrey L and Fathy, Hosam K",
+  journal   = "IEEE Transactions on Industrial Electronics",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    = "58",
+  number    = "8",
+  pages     = "3555--3566",
+  month     = "aug",
+  year      = "2011",
+  doi       = "10.1109/TIE.2010.2087294"
+}
+
+@ARTICLE{Bashash2011-GridLoad,
+  title     = "On the aggregate grid load imposed by battery health-conscious
+               charging of plug-in hybrid electric vehicles",
+  author    = "Bashash, Saeid and Moura, Scott J and Fathy, Hosam K",
+  abstract  = "This article examines the problem of estimating the aggregate
+               load imposed on the power grid by the battery health-conscious
+               charging of plug-in hybrid electric vehicles (PHEVs). The
+               article begins by generating a set of representative daily trips
+               using (i) the National Household Travel Survey (NHTS) and (ii) a
+               Markov chain model of both federal and naturalistic drive
+               cycles. A multi-objective optimizer then uses each of these
+               trips, together with PHEV powertrain and battery degradation
+               models, to optimize both PHEV daily energy cost and battery
+               degradation. The optimizer achieves this by varying (i) the
+               amounts of charge obtained from the grid by each PHEV, and (ii)
+               the timing of this charging. The article finally computes
+               aggregate PHEV power demand by accumulating the charge patterns
+               optimized for individual PHEV trips. The results of this
+               aggregation process show a peak PHEV load in the early morning
+               (between 5.00 and 6.00 a.m.), with approximately half of all
+               PHEVs charging simultaneously. The ability to charge at work
+               introduces smaller additional peaks in the aggregate load
+               pattern. The article concludes by exploring the sensitivity of
+               these results to the relative weighting of the two optimization
+               objectives (energy cost and battery health), battery size, and
+               electricity price.",
+  journal   = "Journal Power Sources",
+  publisher = "Elsevier BV",
+  volume    = "196",
+  number    = "20",
+  pages     = "8747--8754",
+  month     = "oct",
+  year      = "2011",
+  doi       = "10.1016/j.jpowsour.2011.06.025"
+}
+
+@ARTICLE{Forman2012-FisherID,
+  title     = "Genetic identification and fisher identifiability analysis of the Doyle--Fuller--Newman model from experimental cycling of a {LiFePO4} cell",
+  author    = "Forman, Joel C and Moura, Scott J and Stein, Jeffrey L and
+               Fathy, Hosam K",
+  abstract  = "This article examines the problem of identifying the physical
+               parameters of fundamental electrochemistry-based battery models
+               from non-invasive voltage/current cycling tests. The article is
+               particularly motivated by the problem of fitting the
+               Doyle--Fuller--Newman (DFN) battery model to lithium-ion battery
+               cycling data. Previous research in the literature identifies
+               subsets of the DFN model's parameter experimentally. In
+               contrast, this article makes the two unique contributions of:
+               (i) identifying the full set of DFN model parameters from
+               cycling data using a genetic algorithm (GA), and (ii) assessing
+               the accuracy and identifiability of the resulting full parameter
+               set using Fisher information. The specific battery used within
+               this study has lithium iron phosphate cathode chemistry and is
+               intended for high-power applications such as plug-in hybrid
+               electric vehicles (PHEVs). We use seven experimental cycling
+               data sets for model fitting and validation, six of them derived
+               from PHEV drive cycles. This makes the identified parameter
+               values appropriate for PHEV battery simulation and model-based
+               design and control optimization.",
+  journal   = "Journal Power Sources",
+  publisher = "Elsevier BV",
+  volume    = "210",
+  pages     = "263--275",
+  month     = "jul",
+  year      = "2012",
+  doi       = "10.1016/j.jpowsour.2012.03.009"
+}
+
+@ARTICLE{Moura2013-LQR4ParabolicPDE,
+  title     = "Optimal boundary control of reaction--diffusion partial
+               differential equations via weak variations",
+  author    = "Moura, Scott J and Fathy, Hosam K",
+  abstract  = "This paper derives linear quadratic regulator (LQR) results for
+               boundary-controlled parabolic partial differential equations
+               (PDEs) via weak variations. Research on optimal control of PDEs
+               has a rich 40-year history. This body of knowledge relies
+               heavily on operator and semigroup theory. Our research
+               distinguishes itself by deriving existing LQR results from a
+               more accessible set of mathematics, namely weak-variational
+               concepts. Ultimately, the LQR controller is computed from a
+               Riccati PDE that must be derived for each PDE model under
+               consideration. Nonetheless, a Riccati PDE is a significantly
+               simpler object to solve than an operator Riccati equation, which
+               characterizes most existing results. To this end, our research
+               provides an elegant and accessible method for practicing
+               engineers who study physical systems described by PDEs.
+               Simulation examples, closed-loop stability analyses, comparisons
+               to alternative control methods, and extensions to other models
+               are also included.",
+  journal   = "Journal of Dynamic Systems, Measurement, and Control",
+  publisher = "ASME International",
+  volume    = "135",
+  number    = "3",
+  pages     = "034501",
+  month     = "may",
+  year      = "2013",
+  doi       = "10.1115/1.4023071"
+}
+
+@ARTICLE{Moura2013-PHEVBattHealth,
+  title     = "Battery-health conscious power management in plug-in hybrid
+               electric vehicles via electrochemical modeling and stochastic
+               control",
+  author    = "Moura, Scott J and Stein, Jeffrey L and Fathy, Hosam K",
+  journal   = "IEEE Transactions on Control Systems Technology",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    = "21",
+  number    = "3",
+  pages     = "679--694",
+  month     = "may",
+  year      = "2013",
+  doi       = "10.1109/TCST.2012.2189773"
+}
+
+@ARTICLE{Moura2013-LyapES,
+  title     = "Lyapunov-based switched extremum seeking for photovoltaic power
+               maximization",
+  author    = "Moura, Scott J and Chang, Yiyao A",
+  abstract  = "This paper presents a practical variation of extremum seeking
+               (ES) that guarantees asymptotic convergence through a
+               Lyapunov-based switching scheme (Lyap-ES). Traditional ES
+               methods enter a limit cycle around the optimum. Lyap-ES
+               converges to the optimum by exponentially decaying the
+               perturbation signal once the system enters a neighborhood around
+               the extremum. As a case study, we consider maximum power point
+               tracking (MPPT) for photovoltaics. Simulation results
+               demonstrate how Lyap-ES is self-optimizing in the presence of
+               varying environmental conditions and produces greater energy
+               conversion efficiencies than traditional MPPT methods.
+               Experimentally measured environmental data is applied to
+               investigate performance under realistic operating scenarios.",
+  journal   = "Control Engineering Practice",
+  publisher = "Elsevier BV",
+  volume    = "21",
+  number    = "7",
+  pages     = "971--980",
+  month     = "jul",
+  year      = "2013",
+  doi       = "10.1016/j.conengprac.2013.02.009"
+}
+
+@ARTICLE{Moura2014-AdaptSOCSOH,
+  title     = "Adaptive partial differential equation observer for battery
+               state-of-charge/state-of-health estimation via an
+               electrochemical model",
+  author    = "Moura, Scott J and Chaturvedi, Nalin A and Krsti{\'c}, Miroslav",
+  abstract  = "This paper develops an adaptive partial differential equation
+               (PDE) observer for battery state-of-charge (SOC) and
+               state-of-health (SOH) estimation. Real-time state and parameter
+               information enables operation near physical limits without
+               compromising durability, thereby unlocking the full potential of
+               battery energy storage. SOC/SOH estimation is technically
+               challenging because battery dynamics are governed by
+               electrochemical principles, mathematically modeled by PDEs. We
+               cast this problem as a simultaneous state (SOC) and parameter
+               (SOH) estimation design for a linear PDE with a nonlinear output
+               mapping. Several new theoretical ideas are developed, integrated
+               together, and tested. These include a backstepping PDE state
+               estimator, a Pad{\'e}-based parameter identifier, nonlinear
+               parameter sensitivity analysis, and adaptive inversion of
+               nonlinear output functions. The key novelty of this design is a
+               combined SOC/SOH battery estimation algorithm that identifies
+               physical system variables, from measurements of voltage and
+               current only.",
+  journal   = "Journal of Dynamic Systems, Measurement, and Control",
+  publisher = "ASME International",
+  volume    = "136",
+  number    = "1",
+  pages     = "011015",
+  month     = "jan",
+  year      = "2014",
+  doi       = "10.1115/1.4024801"
+}
