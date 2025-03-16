@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Update button text
-        sortButton.innerHTML = isAscending ? 'Sort ↓' : 'Sort ↑';
+        sortButton.innerHTML = isAscending ? 'Sort &uarr;' : 'Sort &darr;';
         isAscending = !isAscending;
     }
 
