@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Scott Moura</title>
+    <link rel="stylesheet" href="smoura-cee.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/cal-icon.png" type="image/png" />
+    <script src="d3.js"></script>
+    <script src="jquery-1.11.3.js"></script>
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <script type="text/javascript" src="include/header.js"></script>
+        <div id="main">
+            <div id="title-line"><div id="title">Software</div></div>
+            <div style="clear:both;"></div>
+            <br/>
+
+            <!-- SPMeT Section -->
+            <div id="title-line"><div id="section">SPMeT</div></div>
+            <div style="clear:both;"></div>
+
+            <div class="project-container" style="display: flex; align-items: center; gap: 40px; margin: 20px 0;">
+                <div class="project-image" style="flex: 1;">
+                    <img src="img/SPMe.png" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+                </div>
+                
+                <div class="project-info" style="flex: 1;">
+                    <i style="display: block; margin-bottom: 15px; color: #666;">Single Particle Model with Electrolyte and Temperature: An electrochemical battery model</i>
+                    
+                    <div class="github-card" style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; margin-top: 20px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                            <img src="img/GitHub-Logo.png" style="height: 24px; margin-right: 8px;"/>
+                            <a href="https://scott-moura.github.io/SPMeT/" style="color: #0366d6; font-weight: 600; text-decoration: none; font-size: 16px;">scott-moura/SPMeT</a>
+                        </div>
+                        <p style="margin: 0; color: #586069;">Open source implementation of the Single Particle Model with Electrolyte and Temperature dynamics for Li-ion batteries</p>
+                        <div style="margin-top: 12px;">
+                            <a href="https://scott-moura.github.io/SPMeT/" class="github-button" style="display: inline-block; padding: 6px 12px; background: #2ea44f; color: white; text-decoration: none; border-radius: 6px; font-size: 14px;">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <br/>
+
+            <!-- FastDFN Section -->
+            <div id="title-line"><div id="section">FastDFN</div></div>
+            <div style="clear:both;"></div>
+
+            <div class="project-container" style="display: flex; align-items: center; gap: 40px; margin: 20px 0;">
+                <div class="project-image" style="flex: 1;">
+                    <img src="img/dfn_states_freeze_NEW.png" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+                </div>
+                
+                <div class="project-info" style="flex: 1;">
+                    <i style="display: block; margin-bottom: 15px; color: #666;">Doyle-Fuller-Newman (DFN) Electrochemical-Thermal Battery Model Simulator</i>
+                    
+                    <div class="github-card" style="background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; margin-top: 20px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 12px;">
+                            <img src="img/GitHub-Logo.png" style="height: 24px; margin-right: 8px;"/>
+                            <a href="https://github.com/scott-moura/fastDFN" style="color: #0366d6; font-weight: 600; text-decoration: none; font-size: 16px;">scott-moura/fastDFN</a>
+                        </div>
+                        <p style="margin: 0; color: #586069;">Fast implementation of the Doyle-Fuller-Newman model for Li-ion battery simulation</p>
+                        <div style="margin-top: 12px;">
+                            <a href="https://github.com/scott-moura/fastDFN" class="github-button" style="display: inline-block; padding: 6px 12px; background: #2ea44f; color: white; text-decoration: none; border-radius: 6px; font-size: 14px;">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+            <br/>
+
+            <!-- Battery Test Data Section -->
+            <div id="title-line"><div id="title">Battery Test Data</div></div>
+            <div style="clear:both;"></div>
+            <br/>
+
+            <table id="batteryDataTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Test Number</th>
+                        <th onclick="sortTable(1)">Date</th>
+                        <th onclick="sortTable(2)">Cell Type</th>
+                        <th onclick="sortTable(3)">Chemistry</th>
+                        <th onclick="sortTable(4)">Description</th>
+                        <th>Graph</th>
+                        <th onclick="sortTable(6)">Download</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Table content will be dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="include/footer.js"></script>
+    </div>
+
+    <script>
+        // Sample data structure (you'll need to populate this with your actual data)
+        const batteryData = [
+            {
+                testNumber: "1",
+                date: "2024-03-29",
+                cellType: "18650",
+                chemistry: "NMC",
+                description: "Capacity test",
+                graph: '<a href="Graphs/Test1V.png">Voltage</a> / <a href="Graphs/Test1C.png">Current</a> / <a href="Graphs/Test1T.png">Temperature</a>',
+                download: '<a href="CSV_Data_Files/Test1.csv">Download</a>'
+            }
+            // Add more data entries here
+        ];
+
+        // Function to populate the table
+        function populateTable(data) {
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = '';
+            
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${row.testNumber}</td>
+                    <td>${row.date}</td>
+                    <td>${row.cellType}</td>
+                    <td>${row.chemistry}</td>
+                    <td>${row.description}</td>
+                    <td>${row.graph}</td>
+                    <td>${row.download}</td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // Sorting function
+        function sortTable(columnIndex) {
+            batteryData.sort((a, b) => {
+                const keys = ['testNumber', 'date', 'cellType', 'chemistry', 'description', 'graph', 'download'];
+                const key = keys[columnIndex];
+                
+                if (typeof a[key] === 'string') {
+                    return a[key].localeCompare(b[key]);
+                }
+                return a[key] - b[key];
+            });
+            
+            populateTable(batteryData);
+        }
+
+        // Initial table population
+        document.addEventListener('DOMContentLoaded', () => {
+            populateTable(batteryData);
+        });
+    </script>
+</body>
+</html> 
