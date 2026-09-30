@@ -13,7 +13,7 @@ document.write("<div id='menu'><a href='publications.html'>Publications</a></div
 document.write("<div id='menu'><a href='team.html'>Our Team</a></div>");
 document.write("<div id='menu'><a href='teaching.html'>Teaching</a></div>");
 //document.write("<div id='menu'><a href='hobbies.html'>Hobbies</a></div>");
-document.write("<div id='menu'><a href='data.php'>Software/Data</a></div>");
+document.write("<div id='menu'><a href='data.html'>Software/Data</a></div>");
 document.write("<div id='menu'><a href='contact.html'>Contact</a></div>");
 document.write("<div id='menu'><a href='http://www.berkeley.edu'><img src='img/cal-icon.png'></a></div>");
 document.write("</div>");
